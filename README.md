@@ -9,8 +9,7 @@ Um script simples para desinstalar apps indesejados dos celulares Samsung via AD
   - Depuracão USB ativa no dispositivo alvo.
 
 ## *Downloads:*
-  - [Baixe a versão mais recente aqui](https://lucmsilva651.github.io/sdebloat/download.html)
-  - [Outras versões](https://github.com/lucmsilva651/sdebloat/releases)
+  - [Página de versões no GitHub)(https://github.com/lucmsilva651/sdebloat/releases)
 
 ## *Notas:*
   - O script pode demorar algum tempo para ser concluído, dependendo do dispositivo e da quantidade de aplicativos a serem desinstalados;
