@@ -10,8 +10,8 @@ Um script simples para desinstalar apps indesejados dos celulares Samsung via AD
 
 ## *Downloads:*
   - [Baixe a versão mais recente aqui](https://lucmsilva651.github.io/sdebloat/download.html)
-  - [Outras versões (beta)](https://github.com/lucmsilva651/sdebloat/tree/main/files/versions/beta)
-  - [Outras versões (legadas)](https://github.com/lucmsilva651/sdebloat/tree/main/files/versions/legacy)
+  - [Outras versões (beta)](https://github.com/lucmsilva651/sdebloat/tree/main/versions/beta)
+  - [Outras versões (legadas)](https://github.com/lucmsilva651/sdebloat/tree/main/versions/legacy)
 
 ## *Notas:*
   - O script pode demorar algum tempo para ser concluído, dependendo do dispositivo e da quantidade de aplicativos a serem desinstalados;
