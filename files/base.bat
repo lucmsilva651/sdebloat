@@ -26,7 +26,7 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"   
 
 REM basic cmd config
-title SDebloat - por Lucas Gabriel (lucmsilva)
+title SDebloat
 cls
 
 REM intro
