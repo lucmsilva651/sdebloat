@@ -8,17 +8,17 @@ REM admin solicitation
 )
 
 if '%errorlevel%' NEQ '0' (
-    echo Solicitando privilégios administrativos...
+    echo Solicitando privilegios administrativos...
     goto UACPrompt
 ) else ( goto gotAdmin )
 
 :UACPrompt
-    echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\getadmin.vbs"
+    echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\sdebloat\sdebloatadm.vbs"
     set params= %*
-    echo UAC.ShellExecute "cmd.exe", "/c ""%~s0"" %params:"=""%", "", "runas", 1 >> "%temp%\getadmin.vbs"
+    echo UAC.ShellExecute "cmd.exe", "/c ""%~s0"" %params:"=""%", "", "runas", 1 >> "%temp%\sdebloat\sdebloatadm.vbs"
 
-    "%temp%\getadmin.vbs"
-    del "%temp%\getadmin.vbs"
+    "%temp%\sdebloat\sdebloatadm.vbs"
+    del "%temp%\sdebloat\sdebloatadm.vbs"
     exit /B
 
 :gotAdmin
