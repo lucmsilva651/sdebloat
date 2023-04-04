@@ -10,22 +10,22 @@ try:
 
 
     def print_header():
-        print("SDebloat (python beta) - por Lucas Gabriel (lucmsilva)")
+        print("SDebloat (python beta) - by Lucas Gabriel (lucmsilva)")
         print("Pagina oficial: http://lucmsilva651.github.io/sdebloat")
 
 
     def check_device():
-        run_command("echo Veja se o celular está conectado corretamente:")
+        run_command("echo See if the cell phone is connected correctly:")
         run_command("adb devices")
 
 
     def uninstall_app(app_name):
-        message = f"O aplicativo {app_name} sera desinstalado."
+        message = f"The package {app_name} will be uninstalled."
         run_command(f"echo {message}")
         run_command(f"pause")
         run_command(f"adb shell pm uninstall --user 0 {app_name}")
-        message = f"O script tentou desinstalar o app {app_name}. Se o app nao foi desinstalado, feche esta janela, e faca" \
-                  f" o comando manualmente."
+        message = f"The script tried to uninstall the package {app_name}. If the app has not been uninstalled, close" \
+                  f"this window, and do this command manually."
         run_command(f"echo {message}")
         run_command(f"pause")
 
@@ -84,24 +84,21 @@ try:
         for app in apps_to_uninstall:
             uninstall_app(app)
 
-    def end_script():
-        messagebox.showinfo("Feito", "Script encerrado com sucesso.")
-
     def about():
-        messagebox.showinfo("Sobre", "SDebloat - por Lucas Gabriel (lucmsilva)")
+        messagebox.showinfo("About", "SDebloat - by Lucas Gabriel (lucmsilva)")
 
 
     root = tk.Tk()
     root.title("SDebloat python beta")
 
-    btn_actions = tk.Button(root, text="Iniciar Ações", command=actions)
+    btn_actions = tk.Button(root, text="Start actions", command=actions)
     btn_actions.pack(padx=10, pady=5)
 
-    btn_about = tk.Button(root, text="Sobre", command=about)
+    btn_about = tk.Button(root, text="About", command=about)
     btn_about.pack(padx=10, pady=5)
 
     root.mainloop()
 
 finally:
-    messagebox.showinfo("Feito", "O processo\nadb.exe\nfoi encerrado com sucesso.")
+    messagebox.showinfo("Done", "The process\nadb.exe\nwas terminated successfully.")
     os.system("taskkill /im adb.exe /f")
