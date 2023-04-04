@@ -11,7 +11,7 @@ try:
 
     def print_header():
         print("SDebloat (python beta) - by Lucas Gabriel (lucmsilva)")
-        print("Pagina oficial: http://lucmsilva651.github.io/sdebloat")
+        print("Official page: http://lucmsilva651.github.io/sdebloat")
 
 
     def check_device():
@@ -23,11 +23,13 @@ try:
         message = f"The package {app_name} will be uninstalled."
         run_command(f"echo {message}")
         run_command(f"pause")
+        run_command(f"cls")
         run_command(f"adb shell pm uninstall --user 0 {app_name}")
         message = f"The script tried to uninstall the package {app_name}. If the app has not been uninstalled, close" \
                   f"this window, and do this command manually."
         run_command(f"echo {message}")
         run_command(f"pause")
+        run_command(f"cls")
 
 
     def actions():
