@@ -1,0 +1,11 @@
+src/python/.idea
+src/python/build
+src/python/dist
+
+!src/
+!src/python
+!src/bat
+
+*.spec
+*.exe
+*.dll
