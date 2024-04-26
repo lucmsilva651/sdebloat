@@ -6,6 +6,8 @@ src/python/dist
 !src/python
 !src/bat
 
+NOTICE.txt
+*.conf
 *.spec
 *.exe
 *.dll
